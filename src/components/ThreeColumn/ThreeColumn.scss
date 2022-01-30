@@ -1,0 +1,59 @@
+@import '../../assets/scss/variables';
+main {
+	min-height: 80vh;
+	display: flex;
+	align-items: center;
+	margin-top: 40px;
+}
+.container {
+	max-width: 1020px;
+	margin: 0 auto;
+}
+.card-component {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	border-radius: 8px;
+	overflow: hidden;
+	margin: 30px;
+
+	.card {
+		padding: 45px;
+	}
+	h1 {
+		color: $veryLightGray;
+		margin: 30px 0px;
+		font-weight: 700;
+		font-size: 40px;
+	}
+	p {
+		color: $transparentWhite;
+		font-family: 'Lexend Deca', sans-serif;
+		margin: 20px 0px 40px;
+		line-height: 1.9;
+	}
+
+	.btn {
+		padding: 15px 30px;
+		border: 2px solid $veryLightGray;
+		border-radius: 30px;
+		font-family: 'Lexend Deca', sans-serif;
+		background-color: $veryLightGray;
+		margin-top: 40px;
+		transition-property: background-color;
+		transition-duration: 0.3s;
+	}
+	&:hover {
+		transition-duration: 0.3s;
+	}
+}
+
+//Media Query
+
+@media only screen and (max-width: 800px) {
+	.card-component {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
